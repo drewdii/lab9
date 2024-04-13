@@ -21,20 +21,12 @@ def main():
             print("Invalid option. Please try again.")
 
 def encode(password):
-    # Your code to encode the password goes here
-    encoded_password = ""
-    for digit in password:
-        encoded_digit = str((int(digit) + 3) % 10)
-        encoded_password += encoded_digit
-    return encoded_password
+    # Your code for the encode function goes here
+    pass
 
+# Your partner will provide the decode function
 def decode(encoded_password):
-    # Your partner's code to decode the password goes here
-    decoded_password = ""
-    for digit in encoded_password:
-        decoded_digit = str((int(digit) - 3) % 10)
-        decoded_password += decoded_digit
-    return decoded_password
+    pass
 
 if __name__ == "__main__":
     main()
