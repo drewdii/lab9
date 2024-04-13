@@ -25,13 +25,21 @@ def main():
             print("Invalid choice. Please try again.")
 
 
-# PARTNER COMMIT
+# Partner COMMIT
 def encode(password):
-     
+    encoded_password = ""
+    for digit in password:
+        shifted_digit = (int(digit) + 3) % 10
+        encoded_password += str(shifted_digit)
+    return encoded_password
 
-# PARTNER COMMIT
+# Partner COMMIT
 def decode(encoded_password):
-    
+    decoded_password = ""
+    for digit in encoded_password:
+        shifted_digit = (int(digit) - 3) % 10
+        decoded_password += str(shifted_digit)
+    return decoded_password
 
 if __name__ == "__main__":
     main()
